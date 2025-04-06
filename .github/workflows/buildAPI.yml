@@ -31,8 +31,8 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Compile Java file
-      run: javac src/DynamicJson.java
+    - name: Run test
+      run: mnv test
     - name: list dir
       run: |
           ls -la
@@ -40,6 +40,8 @@ jobs:
           ls src/
           echo 'list bin'
           ls bin/
+          echo target
+          ls target/
     - name: Run Java file
       run: java src/DynamicJson
 
