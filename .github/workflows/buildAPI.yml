@@ -32,8 +32,15 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Compile Java file
-      run: javac DynamicJson.java
+      run: javac src/DynamicJson.java
+    - name: list dir
+      run: |
+          ls -la
+          echo 'list src'
+          ls src/
+          echo 'list bin'
+          ls bin/
     - name: Run Java file
-      run: java DynamicJson
+      run: java src/DynamicJson
 
    
