@@ -15,7 +15,7 @@ jobs:
         run: |
           echo "pre checkout"
           ls -la
-          exit 1
+          #exit 1
           
       - uses: actions/checkout@v4
 
