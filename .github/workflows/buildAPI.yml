@@ -32,7 +32,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Run test
-      run: mnv test
+      run: mvn test
     - name: list dir
       run: |
           ls -la
